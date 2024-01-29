@@ -1,9 +1,13 @@
+import Footer from './Footer';
+import Hello from './Hello';
+
 export default function Home() {
-   return (
-     <main>
-            <div className="MyFooter">
-            <h1>Hello world!</h1> </div>
-     </main>
-   );
- }
-  
+  return (
+    <>
+      <main>
+        <Hello />
+      </main>
+      <Footer />
+    </>
+  );
+}
