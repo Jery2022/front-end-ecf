@@ -10,16 +10,6 @@
   text-align: center;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 .column {
   float: left;
   width: 25%;
@@ -28,8 +18,15 @@ html {
 }
 
 .card {
+  text-align: center;
+  font-size: calc(8px + 2vmin);
+  color: black;
+  margin: 2px 16px;
+  max-width: 300px;
+  max-height: 100vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  padding: 2px 16px;
+  border-radius: 5px;
 }
 
 .about-section {
@@ -52,29 +49,6 @@ html {
 
 .grade {
   color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #ffa500;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 }
 
 .about-title h2 {

@@ -11,11 +11,11 @@ function ButtonLogin() {
   return (
     <>
       <Button
-        style={{ width: '120px' }}
-        variant="outline-success"
+        className="MyButtonSmall"
+        variant="outline-warning"
         onClick={handleLogin}
       >
-        Login
+        Connexion
       </Button>
     </>
   );

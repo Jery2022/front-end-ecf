@@ -1,10 +1,11 @@
 //import * as bootstrap from 'bootstrap';
 //import { ReactDOM } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Navbar, Nav, Form, Button } from 'react-bootstrap';
+import { Container, Navbar, Nav, Form } from 'react-bootstrap';
 import { FaHome, FaPhone } from 'react-icons/fa';
 import { FaGears, FaImages, FaRegLightbulb } from 'react-icons/fa6';
 import ButtonLogin from '../routes/ButtonLogin';
+import logo from '../assets/images/logo/V-Parrot-logo.png';
 
 function Header() {
   return (
@@ -14,10 +15,10 @@ function Header() {
           <Navbar.Brand href="/">
             <img
               alt="Logo"
-              src={'../logo.svg'}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
+              src={logo}
+              width="50"
+              height="50"
+              className="d-inline-block  align-middle"
             />
             Garage V.Parrot
           </Navbar.Brand>
@@ -40,22 +41,14 @@ function Header() {
                 <FaPhone /> Contact
               </Nav.Link>
             </Nav>
+            <Form
+              className="d-flex  
+              ButtonLogin 
+              "
+            >
+              <ButtonLogin />
+            </Form>
           </Navbar.Collapse>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-              style={{ width: '200px' }}
-            />
-            <Button style={{ width: '120px' }} variant="outline-success">
-              Search
-            </Button>
-          </Form>
-          <Form className="d-flex p-2">
-            <ButtonLogin />
-          </Form>
         </Container>
       </Navbar>
     </header>
