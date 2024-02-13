@@ -8,18 +8,18 @@
   object-fit: cover;
 }
 
-.wrapper-login {
+.wrapper-message {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  width: 500px;
   background-color: #fbfbfb;
   color: black;
   padding: 10px;
   border-color: 1em solid #5f5f5f;
   border-radius: 5px;
   text-align: left;
-  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.82);
+  box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.2);
   margin: 20px auto;
   font-family: 'Roboto', sans-serif;
 }
@@ -31,4 +31,16 @@ h2 {
   margin: 30px auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper-message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
 }

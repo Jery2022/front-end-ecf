@@ -1,18 +1,20 @@
-//App.js
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Root from './routes/Root';
-import Header from './components/Header';
-import './App.css';
+import Root from './components/services/routes/Root';
+import FooterPage from './components/pages/FooterPage';
+import HeaderPage from './components/pages/HeaderPage';
+//import Login from './components/pages/Login';
 
 function App() {
   return (
     <>
       <Router>
-        <Header />
+        <HeaderPage />
         <Root />
+        <FooterPage />
       </Router>
     </>
   );
 }
+
 export default App;
