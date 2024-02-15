@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Root from './components/services/routes/Root';
-import FooterPage from './components/pages/FooterPage';
-import HeaderPage from './components/pages/HeaderPage';
-//import Login from './components/pages/Login';
+import FooterPage from './components/pages/Footer/FooterPage';
+import HeaderPage from './components/pages/Header/HeaderPage';
+import Landing from './components/pages/Landing/Landing';
 
 function App() {
   return (
     <>
       <Router>
         <HeaderPage />
+        <Landing />
         <Root />
         <FooterPage />
       </Router>

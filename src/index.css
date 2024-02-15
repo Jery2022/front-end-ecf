@@ -3,7 +3,9 @@ html {
 }
 
 body {
-  margin: 0;
+  height: 100vh;
+  width: 100vw;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,6 +16,8 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 code {
@@ -21,8 +25,26 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-bg {
+  background-image: linear-gradient(
+    to left bottom,
+    #f7f7f6,
+    #feda84,
+    #f5dcbd,
+    #ffa500
+  );
+}
+
 .My-Button {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: #ffa500;
   font-size: calc(8px + 2vmin);
   border: none;
@@ -32,7 +54,7 @@ code {
   width: 220px;
   height: 50px;
   padding: 10px;
-  margin: 10px 40%;
+  margin: 50px 40% 50px 40%;
   cursor: pointer;
 }
 
@@ -51,10 +73,6 @@ code {
 .Link-App:hover {
   color: #ffa500;
   text-decoration: underline;
-}
-
-.ButtonLogin {
-  margin-left: 500px;
 }
 
 .My-Button:hover {
@@ -327,8 +345,8 @@ code {
   margin: 5px;
 }
 
-@media screen and (max-width: 570px) {
-  .MyButton {
+@media screen and (max-width: 376px) {
+  .My-Button {
     display: inline-block;
     background-color: #ffa500;
     font-size: calc(12px + 2vmin);
@@ -343,7 +361,7 @@ code {
     cursor: pointer;
   }
 
-  .MyButton:hover {
+  .My-Button:hover {
     background-color: #555;
   }
 
@@ -378,22 +396,7 @@ code {
     padding: 10px 15px 30px 10px;
     border-radius: 10px;
   }
-  /*
-  .wrapper-col {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .wrapper-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-  }
-*/
   .wrapper-skills {
     width: 100%;
     display: flex;

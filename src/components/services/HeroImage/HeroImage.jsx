@@ -1,12 +1,11 @@
 import { React } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
-import './css/HeroImage.css';
+import './HeroImage.css';
 
-export default function Heroe() {
+export default function HeroImage() {
   return (
     <Row
-      className=" hero-image 
-      justify-content-center 
+      className="hero-image 
        expand-lg
     "
     >
@@ -25,10 +24,14 @@ export default function Heroe() {
           réparer et les rénover, peu importe leur durée de vie et leur modèle.
         </p>
         <Button
-          className="MyButton  "
+          className="My-Button"
           style={{
-            width: '220px',
-            marginLeft: '25%',
+            type: 'button',
+            onClick: {
+              handleClick: () => {
+                alert('clicked');
+              },
+            },
           }}
         >
           En savoir plus...

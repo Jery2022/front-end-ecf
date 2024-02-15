@@ -1,4 +1,4 @@
-.MyFooter {
+.My-Footer {
   background-color: #282c34;
   min-height: 20vh;
   display: flex;
@@ -8,8 +8,15 @@
   font-size: calc(6px + 2vmin);
   color: white;
   text-align: center;
+  padding: 10px;
 }
 
-.MyFooter-link {
-  color: #61dafb;
+.My-Footer-link {
+  color: white;
+}
+
+.My-Footer-link:hover {
+  color: #ffa500;
+  text-decoration: none;
+  cursor: pointer;
 }

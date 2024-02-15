@@ -1,8 +1,8 @@
 import React, { useState /*useEffect */ } from 'react';
 import { Form, Image, Button, Alert } from 'react-bootstrap';
-import Logo from '../../assets/images/logo/V-Parrot-logo.png';
+import Logo from '../../../assets/images/logo/V-Parrot-logo.png';
 
-import '../css/Login.css';
+import './Login.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');

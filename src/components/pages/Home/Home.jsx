@@ -1,4 +1,3 @@
-import '../css/Home.css';
 import React from 'react';
 import { Button, Col, Image, Row, Card, ListGroup } from 'react-bootstrap';
 import { FaCalendarDays } from 'react-icons/fa6';
@@ -6,14 +5,16 @@ import { FaCircleCheck } from 'react-icons/fa6';
 import { FaHeadset } from 'react-icons/fa6';
 import { FaRegClock } from 'react-icons/fa6';
 import { VscLocation } from 'react-icons/vsc';
-import AdressInfo from '../services/AdressInfo';
-import ViewInfo from '../services/ViewInfo';
-import HeroImage from '../services/HeroImage';
-import cheminUrl from '../../components/img/Img_rempla_vitre.jpg';
-import cheminUrl3 from '../../components/img/Img_peinture-car.jpg';
-import cheminUrl4 from '../../components/img/Img_rempla-frein.jpg';
-import { listCars, listTestimonials, dataServices } from '../../js/script';
-import car from '../../assets/images/cars/Chevrolet_camero2017_1.jpg';
+import AdressInfo from '../../services/AdressInfo';
+import ViewInfo from '../../services/ViewInfo';
+import HeroImage from '../../services/HeroImage/HeroImage';
+import cheminUrl from './../img/Img_rempla_vitre.jpg';
+import cheminUrl3 from './../img/Img_peinture-car.jpg';
+import cheminUrl4 from './../img/Img_rempla-frein.jpg';
+import { listCars, listTestimonials, dataServices } from '../../../js/script';
+import car from '../../../assets/images/cars/Chevrolet_camero2017_1.jpg';
+import SendMessage from '../../services/SendMessage/SendMessage';
+import './Home.css';
 
 export default function Home() {
   const startIndex = 0;
@@ -23,13 +24,13 @@ export default function Home() {
   return (
     <>
       <main>
-        <article className="container-fluid  p-0 m-0 pt-lg-2 px-3">
-          <Row className="container-fluid p-0 m-0">
+        <article className="container-fluid">
+          <Row className="container-fluid">
             <HeroImage />
           </Row>
           <section className="container-fluid p-0 my-0">
             <Row
-              className="slogan bg-dark 
+              className="slogan
               text-white "
             >
               <h2>Nous nous engageons à vous fournir un service de qualité</h2>
@@ -75,7 +76,7 @@ export default function Home() {
                   <div>
                     <br />
                     <Button
-                      className="MyButton  m-auto"
+                      className="My-Button  m-auto"
                       style={{ width: '220px' }}
                     >
                       Contactez-nous !
@@ -196,7 +197,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div class="wrapper-skills">
-                  <Button className="MyButton">En savoir plus...</Button>
+                  <Button className="My-Button">En savoir plus...</Button>
                 </div>
               </Col>
 
@@ -214,7 +215,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div class="wrapper-skills">
-                  <Button className="MyButton">En savoir plus...</Button>
+                  <Button className="My-Button">En savoir plus...</Button>
                 </div>
               </Col>
 
@@ -234,7 +235,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div class="wrapper-skills">
-                  <Button className="MyButton">En savoir plus...</Button>
+                  <Button className="My-Button">En savoir plus...</Button>
                 </div>
               </Col>
               <Col xs={12} md={6} xl={4} className="wrapper-skills">
@@ -251,7 +252,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div class="wrapper-skills ">
-                  <Button className="MyButton">En savoir plus...</Button>
+                  <Button className="My-Button">En savoir plus...</Button>
                 </div>
               </Col>
             </Row>
@@ -286,8 +287,12 @@ export default function Home() {
                       ))}
                     </ListGroup>
                     <Card.Body>
-                      <Card.Link href="#">Détail...</Card.Link>
-                      <Card.Link href="#">Retour Accueil</Card.Link>
+                      <Card.Link className="Link-App" href="#">
+                        Détail...
+                      </Card.Link>
+                      <Card.Link className="Link-App" href="#">
+                        Retour Accueil
+                      </Card.Link>
                     </Card.Body>
                   </Card>
                 ))}
@@ -295,6 +300,7 @@ export default function Home() {
             </Row>
           </section>
           <br />
+          <SendMessage />
         </article>
       </main>
     </>
