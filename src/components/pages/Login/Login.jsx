@@ -1,7 +1,7 @@
 import React, { useState /*useEffect */ } from 'react';
-import { Form, Image, Button, Alert } from 'react-bootstrap';
+import { Form, Image, Alert } from 'react-bootstrap';
 import Logo from '../../../assets/images/logo/V-Parrot-logo.png';
-
+import '../../../index.css';
 import './Login.css';
 
 export default function Login() {
@@ -55,44 +55,51 @@ export default function Login() {
 
   return (
     <>
-      <main>
-        <article className="container-fluid p-0 my-0 text-white px-2">
+      <section className="container-fluid  section-paire">
+        <Form className="wrapper-login">
           <h2>Connexion</h2>
-          <Form className="wrapper-login">
-            <Image className="wrapper-logo" src={Logo} alt="image" />
-            <Form.Floating className="mb-3 w-100">
-              <Form.Control
-                id="floatingInputCustom"
-                type="email"
-                placeholder="name@example.com"
-                value={email}
-                onChange={handleChangeEmail}
-                required
-              />
-              <label htmlFor="floatingInputCustom">Email address</label>
-            </Form.Floating>
-            <Form.Floating className="mb-3 w-100">
-              <Form.Control
-                id="floatingPasswordCustom"
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={handleChangePasseword}
-                required
-              />
-              <label htmlFor="floatingPasswordCustom">Password</label>
-            </Form.Floating>
-            <br />
-            <Button variant="link" className="Link-App">
-              Mot de passe oublié ? Cliquez ici !
-            </Button>
-            <Button type="button" onClick={handleSubmit} className="My-Button">
-              Connexion
-            </Button>
-            <br />
-          </Form>
-        </article>
-      </main>
+          <Image className="wrapper-logo" src={Logo} alt="image" />
+          <Form.Floating className="mb-3 w-100">
+            <Form.Control
+              id="floatingInputCustom"
+              type="email"
+              placeholder="name@example.com"
+              value={email}
+              onChange={handleChangeEmail}
+              required
+            />
+            <label htmlFor="floatingInputCustom">Email address</label>
+          </Form.Floating>
+          <Form.Floating className="mb-3 w-100">
+            <Form.Control
+              id="floatingPasswordCustom"
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={handleChangePasseword}
+              required
+            />
+            <label htmlFor="floatingPasswordCustom">Password</label>
+          </Form.Floating>
+          <br />
+          <button variant="link" className="Link-App">
+            Mot de passe oublié ? Cliquez ici !
+          </button>
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className="My-Button 
+          "
+            style={{
+              width: '220px',
+              justifyContent: 'center',
+            }}
+          >
+            Connexion
+          </button>
+          <br />
+        </Form>
+      </section>
     </>
   );
 }

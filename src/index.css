@@ -30,6 +30,31 @@ a {
   color: black;
 }
 
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+span {
+  font-size: calc(8px + 2vmin);
+  font-weight: bold;
+}
+
 .navbar-bg {
   background-image: linear-gradient(
     to left bottom,
@@ -40,21 +65,50 @@ a {
   );
 }
 
+.section-paire {
+  background-color: #f3efef;
+  color: black;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.section-impaire {
+  background-color: #dedede;
+  color: black;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.section-title {
+  color: #d2691e;
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  position: relative;
+  padding: 20px;
+}
+
 .My-Button {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
   background-color: #ffa500;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(10px + 2vmin);
   border: none;
   outline: 0;
   color: black;
   text-align: center;
-  width: 220px;
   height: 50px;
-  padding: 10px;
-  margin: 50px 40% 50px 40%;
+  padding: 5px;
+  margin: 10px;
+  width: 220px;
+  border-radius: 5px;
+}
+
+.My-Button:hover {
+  background-color: #555;
+  color: white;
   cursor: pointer;
 }
 
@@ -73,19 +127,6 @@ a {
 .Link-App:hover {
   color: #ffa500;
   text-decoration: underline;
-}
-
-.My-Button:hover {
-  background-color: #555;
-}
-
-.section-title {
-  color: #d2691e;
-  text-align: center;
-  font-weight: 900;
-  font-size: 50px;
-  position: relative;
-  padding: 20px;
 }
 
 .under-title {
@@ -189,18 +230,9 @@ a {
   border-radius: 6px;
 }
 
-.card-hover:hover {
+.Card-hover:hover {
   box-shadow: 0 8px 16px 0 chocolate;
   transition: 0.5s;
-}
-
-.content-bienvenue {
-  background-color: hsl(0, 0%, 87%);
-  font-size: calc(8px + 2vmin);
-  color: black;
-  text-align: justify;
-  text-wrap: wrap;
-  padding: 10px;
 }
 
 .wrapper-Icons {
@@ -256,6 +288,23 @@ a {
   margin-right: 20px;
   text-wrap: wrap;
   text-justify: auto;
+}
+
+.My-Card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(8px + 2vmin);
+  color: black;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  gap: 4em;
+  border-radius: 5px;
+  border: 1px solid red;
+  margin-top: 10px;
 }
 
 .wrapper-card-cars {
@@ -345,24 +394,36 @@ a {
   margin: 5px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (min-width: 374px) and (max-width: 768px) {
+  .section-title {
+    color: #d2691e;
+    text-align: center;
+    font-weight: 700;
+    font-size: calc(25px + 2vmin);
+    position: relative;
+    padding: 40px 20px;
+  }
+
   .My-Button {
     display: inline-block;
+    align-items: center;
     background-color: #ffa500;
-    font-size: calc(12px + 2vmin);
+    font-size: calc(10px + 2vmin);
+    border-radius: 5px;
     border: none;
     outline: 0;
     color: black;
     text-align: center;
-    width: 100%;
     height: 50px;
     padding: 10px;
-    margin: 15px auto;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
   }
 
   .My-Button:hover {
     background-color: #555;
+    color: white;
   }
 
   .ButtonLogin {

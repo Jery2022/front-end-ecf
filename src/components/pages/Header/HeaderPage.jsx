@@ -4,7 +4,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 import { FaHome, FaPhone } from 'react-icons/fa';
 import { FaGears, FaImages, FaRegLightbulb } from 'react-icons/fa6';
 import styled from 'styled-components';
-import ButtonLogin from '../../services/ButtonLogin';
+import ButtonLogin from '../../utils/BoutonLogin/ButtonLogin';
 import logo from '../../../assets/images/logo/V-Parrot-logo.png';
 
 const FormNav = styled.form`
@@ -21,7 +21,7 @@ const FormNav = styled.form`
     height: 45px;
   }
 
-  @media (min-width: 376px) {
+  @media (min-width: 375px) {
     display: flex;
     direction: column;
     align-items: center;
@@ -64,7 +64,7 @@ const Lang = styled.div`
     padding: 3px;
   }
 
-  @media (min-width: 376px) {
+  @media (min-width: 375px) {
     display: flex;
     justify-content: center;
     align-items: center;

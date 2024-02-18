@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HeroImage from '../../services/HeroImage/HeroImage';
+import HeroImage from '../../utils/HeroImage/HeroImage';
 
 export default function Landing() {
   const LandingDiv = styled.div`

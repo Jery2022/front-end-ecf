@@ -1,64 +1,24 @@
 import React from 'react';
-import './GalleryImage.css';
-export default function GalleryImage() {
+import ViewCardCars from '../../utils/ViewsCardCars/ViewCardCars';
+import SendMessage from '../../utils/SendMessage/SendMessage';
+import { listCars } from '../../../assets/datas/cars.datas.js';
+import '../../../index.css';
+
+export default function Gallery() {
+  const length = listCars.length;
   return (
-    <div>
-      <h2>Responsive Image Gallery</h2>
-
-      <h4>Resize the browser window to see the effect.</h4>
-
-      <div className="responsive">
-        <div className="gallery">
-          <a target="_blank" href="img_5terre.jpg">
-            <img
-              src="img_5terre.jpg"
-              alt="Cinque Terre"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div className="desc">Add a description of the image here</div>
-        </div>
-      </div>
-
-      <div className="responsive">
-        <div className="gallery">
-          <a target="_blank" href="img_forest.jpg">
-            <img src="img_forest.jpg" alt="Forest" width="600" height="400" />
-          </a>
-          <div className="desc">Add a description of the image here</div>
-        </div>
-      </div>
-
-      <div className="responsive">
-        <div className="gallery">
-          <a target="_blank" href="img_lights.jpg">
-            <img
-              src="img_lights.jpg"
-              alt="Northern Lights"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div className="desc">Add a description of the image here</div>
-        </div>
-      </div>
-
-      <div className="responsive">
-        <div className="gallery">
-          <a target="_blank" href="img_mountains.jpg">
-            <img
-              src="img_mountains.jpg"
-              alt="Mountains"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div className="desc">Add a description of the image here</div>
-        </div>
-      </div>
-
-      <div className="clearfix"></div>
-    </div>
+    <>
+      <article className="container-fluid p-0 my-0">
+        <section className="section-paire">
+          <div></div>
+          <div className="section-title">Gallérie de voitures en vente </div>
+        </section>
+        <section className="section-impaire">
+          <ViewCardCars listArray={listCars} NumbreOfCars={length} />
+        </section>
+        <br />
+        <SendMessage />
+      </article>
+    </>
   );
 }

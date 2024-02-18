@@ -8,10 +8,10 @@ import cheminUrl7 from './../assets/images/cars/Chevrolet_camero2017_1.jpg';
 import cheminUrl8 from './../assets/images/cars/Chevrolet_camero2017_1.jpg';
 import cheminUrl9 from './../assets/images/cars/Chevrolet_camero2017_1.jpg';
 import cheminUrl10 from './../assets/images/cars/Chevrolet_camero2017_1.jpg';
-import iconUrl1 from '../assets/images/icons/image-icon_7.jpg';
-import iconUrl2 from '../assets/images/icons/image-icon_1.jpg';
-import iconUrl3 from '../assets/images/icons/image-icon_2.jpg';
-import iconUrl4 from '../assets/images/icons/image-icon_4.jpg';
+import iconUrl1 from '../assets/icons/image-icon_7.jpg';
+import iconUrl2 from '../assets/icons/image-icon_1.jpg';
+import iconUrl3 from '../assets/icons/image-icon_2.jpg';
+import iconUrl4 from '../assets/icons/image-icon_4.jpg';
 
 export const listTestimonials = [
   {
