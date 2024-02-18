@@ -1,7 +1,7 @@
-import iconUrl1 from '../assets/images/icons/image-icon_7.jpg';
-import iconUrl2 from '../assets/images/icons/image-icon_1.jpg';
-import iconUrl3 from '../assets/images/icons/image-icon_2.jpg';
-import iconUrl4 from '../assets/images/icons/image-icon_4.jpg';
+import iconUrl1 from '../icons/image-icon_7.jpg';
+import iconUrl2 from '../icons/image-icon_1.jpg';
+import iconUrl3 from '../icons/image-icon_2.jpg';
+import iconUrl4 from '../icons/image-icon_4.jpg';
 
 // tableau des listes de services
 

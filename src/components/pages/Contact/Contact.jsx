@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import './Contact.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
   const [inputs, setInputs] = useState({});
+  let navigate = useNavigate();
 
   const handleChange = (event) => {
     const fname = event.target;
@@ -14,21 +16,32 @@ export default function Contact() {
 
   const handleClick = (event) => {
     event.preventDefault();
-    alert(inputs);
+    navigate('/home');
+    console.log(inputs);
   };
 
   return (
     <>
       <article>
-        <section className="container-fluid p-0 my-0 text-white">
-          <h2>Contact</h2>
+        <section className="section-paire">
           <Form className="wrapper-login">
+            <h2>Contact</h2>
             <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Email :</Form.Label>
               <Form.Control
                 onChange={handleChange}
                 type="email"
                 placeholder="contact@example.com"
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="contactForm.ControlInput2">
+              <Form.Label>Objet :</Form.Label>
+              <Form.Control
+                onChange={handleChange}
+                type="text"
+                placeholder="Votre objet ici.."
+                required
               />
             </Form.Group>
             <Form.Group
@@ -36,15 +49,20 @@ export default function Contact() {
               controlId="contactForm.ControlTextarea1"
             >
               <Form.Label>Message :</Form.Label>
-              <Form.Control as="textarea" onChange={handleChange} rows={3} />
+              <Form.Control
+                as="textarea"
+                onChange={handleChange}
+                rows={3}
+                required
+              />
             </Form.Group>
             <br />
-            <Button type="button" onClick={handleClick} className="My-Button">
+            <button type="button" onClick={handleClick} className="My-Button">
               Envoyer
-            </Button>
-            <Button type="button" onClick={handleClick} className="My-Button">
+            </button>
+            <button type="button" onClick={handleClick} className="My-Button">
               Annuler
-            </Button>
+            </button>
             <br />
           </Form>
         </section>

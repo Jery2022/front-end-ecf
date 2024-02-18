@@ -10,8 +10,8 @@ export default function Gallery() {
     <>
       <article className="container-fluid p-0 my-0">
         <section className="section-paire">
-          <div></div>
           <div className="section-title">Gallérie de voitures en vente </div>
+          <div>Filtre</div>
         </section>
         <section className="section-impaire">
           <ViewCardCars listArray={listCars} NumbreOfCars={length} />

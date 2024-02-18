@@ -88,11 +88,13 @@ span {
   font-size: 50px;
   position: relative;
   padding: 20px;
+  margin: 50px auto;
 }
 
 .My-Button {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #ffa500;
   font-size: calc(10px + 2vmin);
   border: none;
@@ -101,7 +103,10 @@ span {
   text-align: center;
   height: 50px;
   padding: 5px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 220px;
   border-radius: 5px;
 }
@@ -129,45 +134,49 @@ span {
   text-decoration: underline;
 }
 
-.under-title {
-  color: black;
-  text-align: left;
-  font-weight: 300;
-  font-size: 20px;
-  position: relative;
-  padding: 20px;
-}
-
 .wrapper-testimonials {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: calc(8px + 2vmin);
+  color: black;
+  width: 330px;
+  padding: 16px;
+  margin: 5px auto;
+}
+
+.info-User-testimonial {
+  display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
+  align-items: center;
+  justify-content: left;
   font-size: calc(8px + 2vmin);
   color: black;
   background-color: #fee080;
   border: 1px solid #8b8b8b;
   width: 100%;
-  min-height: 10vh;
-  padding: 15px 15px;
   border-radius: 10px 10px 0 0;
 }
 
-.one-testimonial {
+.My-testimonial {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
-  font-size: calc(8px + 2vmin);
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
   color: black;
   border: 1px solid #8b8b8b;
   width: 100%;
   padding: 15px;
+  text-wrap: wrap;
+  padding: 10px;
 }
 
-.testimonials {
+.Date-testimonial {
   text-align: left;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(6px + 2vmin);
   color: black;
   background-color: #fee080;
   border: 1px solid #8b8b8b;
@@ -176,14 +185,8 @@ span {
   padding: 15px 15px;
   border-radius: 0 0 10px 10px;
 }
-.one-comment {
-  max-width: 450px;
-  min-width: 120px;
-  height: 120px;
-  padding: 10px 5px;
-}
 
-.imageXs {
+.Rounded-Image-Testimonial {
   width: 100px;
   height: 100px;
   margin: 10px 5px;
@@ -201,18 +204,6 @@ span {
   border-radius: 10px;
   margin: 10px auto;
   text-align: center;
-}
-
-.wrapper-products-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  border: 1px solid rgb(244, 33, 33);
-  width: 100%;
-  padding-left: 100px;
-  margin: 50px auto;
-  column-gap: 2em;
-  row-gap: 2em;
 }
 
 .list-products-card {
@@ -329,13 +320,18 @@ span {
 }
 
 .wrapper-services {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: calc(6px + 2vmin);
   color: black;
-  border: 2px solid #ccc;
   background-color: #eee;
-  border-radius: 5px;
+  width: 100%;
   padding: 16px;
-  margin: 5px auto;
+  margin: 15px auto;
 }
 
 .card-cars-info {
@@ -395,6 +391,10 @@ span {
 }
 
 @media screen and (min-width: 374px) and (max-width: 768px) {
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
   .section-title {
     color: #d2691e;
     text-align: center;
@@ -432,6 +432,17 @@ span {
     margin-top: 20px;
   }
 
+  .wrapper-testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: calc(8px + 2vmin);
+    color: black;
+    width: 305px;
+  }
+
   .wrapper-garage-info {
     display: table;
     background-color: #fee080;
@@ -459,11 +470,12 @@ span {
   }
 
   .wrapper-skills {
-    width: 100%;
+    width: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 10px auto;
   }
 
   .wrapper-services {

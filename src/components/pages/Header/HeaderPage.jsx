@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { FaHome, FaPhone } from 'react-icons/fa';
-import { FaGears, FaImages, FaRegLightbulb } from 'react-icons/fa6';
+import { FaImages, FaRegLightbulb } from 'react-icons/fa6';
 import styled from 'styled-components';
 import ButtonLogin from '../../utils/BoutonLogin/ButtonLogin';
 import logo from '../../../assets/images/logo/V-Parrot-logo.png';
@@ -21,7 +21,7 @@ const FormNav = styled.form`
     height: 45px;
   }
 
-  @media (min-width: 375px) {
+  @media screen and (min-width: 374px) and (max-width: 768px) {
     display: flex;
     direction: column;
     align-items: center;
@@ -63,19 +63,12 @@ const Lang = styled.div`
     color: #555;
     padding: 3px;
   }
-
-  @media (min-width: 375px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2px;
-  }
 `;
 
 function HeaderPage() {
   return (
     <header>
-      <Navbar expand="lg" sticky="top" className=" navbar-bg shadows   ">
+      <Navbar expand="lg" sticky="top" className=" navbar-bg shadows ">
         <Container fluid className="d-flex justify-content-space-between ">
           <Navbar.Brand href="/">
             <img
@@ -95,9 +88,6 @@ function HeaderPage() {
               </Nav.Link>
               <Nav.Link as={Link} to="/about">
                 <FaRegLightbulb /> About
-              </Nav.Link>
-              <Nav.Link as={Link} to="/services">
-                <FaGears /> Services
               </Nav.Link>
               <Nav.Link as={Link} to="/gallery">
                 <FaImages /> Galérie
