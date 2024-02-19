@@ -9,18 +9,27 @@ export default function Landing() {
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      height: 100%;
-      background-color: yellow;
-      border: 1px solid red;
+      height: 100vh;
+      /*.My-Button {
+        width: 220px;
+        height: 50px;
+         margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;*/
+      }
     }
   `;
   return (
     <>
-      <LandingDiv>
-        <div className="Landing">
-          <HeroImage />
-        </div>
-      </LandingDiv>
+      <article>
+        <section>
+          <LandingDiv>
+            <div className="Landing">
+              <HeroImage />
+            </div>
+          </LandingDiv>
+        </section>
+      </article>
     </>
   );
 }

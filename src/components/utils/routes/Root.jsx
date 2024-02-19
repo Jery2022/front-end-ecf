@@ -14,14 +14,15 @@ function Root() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Outlet />}>
+        <Route path="/" element={<Outlet />} errorElement={<ErrorPage />}>
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/*" element={<ErrorPage />} />
         </Route>
+
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/*" />
       </Routes>
     </>
   );

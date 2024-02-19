@@ -2,6 +2,8 @@ import React from 'react';
 import ViewCardCars from '../../utils/ViewsCardCars/ViewCardCars';
 import SendMessage from '../../utils/SendMessage/SendMessage';
 import { listCars } from '../../../assets/datas/cars.datas.js';
+import ViewPagination from '../../utils/ViewPagination/ViewPagination';
+
 import '../../../index.css';
 
 export default function Gallery() {
@@ -15,6 +17,7 @@ export default function Gallery() {
         </section>
         <section className="section-impaire">
           <ViewCardCars listArray={listCars} NumbreOfCars={length} />
+          <ViewPagination />
         </section>
         <br />
         <SendMessage />

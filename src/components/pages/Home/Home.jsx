@@ -10,6 +10,7 @@ import { listCars } from '../../../assets/datas/cars.datas.js';
 import { dataServices } from '../../../assets/datas/services.datas.js';
 import { listTestimonials } from '../../../assets/datas/testimonials.datas.js';
 import { dataSkills } from '../../../assets/datas/skills.datas.js';
+import HeroImage from '../../utils/HeroImage/HeroImage';
 import AdressInfo from '../../utils/AdressInfo/AdressInfo';
 import ViewInfo from '../../utils/ViewInfo/ViewInfo';
 import ViewCardCars from '../../utils/ViewsCardCars/ViewCardCars';
@@ -35,6 +36,7 @@ export default function Home() {
   return (
     <>
       <article className="container-fluid">
+        <HeroImage />
         <section className="section-paire">
           <Row className="slogan">
             <h2>Nous nous engageons à vous fournir un service de qualité</h2>
@@ -178,7 +180,7 @@ export default function Home() {
                   key={myCard.id}
                   style={{
                     width: '20rem',
-                    height: '30rem',
+                    height: '40rem',
                   }}
                 >
                   <Card.Img

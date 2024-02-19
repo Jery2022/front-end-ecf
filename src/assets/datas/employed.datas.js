@@ -1,9 +1,9 @@
-import photoCEO from '../../assets/images/avatars/avatar_CEO_V.Parrot.jpg';
-import photoSecr1 from '../../assets/images/avatars/avatar_femme_secretaire1.jpg';
-import photoSecr2 from '../../assets/images/avatars/avatar_femme_secretaire2.jpg';
-import photoChefAtelier from '../../assets/images/avatars/avatar_chef-atelier.jpg';
-import photoTolier from '../../assets/images/avatars/avatar_homme_cinquantaine1.jpg';
-import photoMeca from '../../assets/images/avatars/avatar_homme_cinquantaine2.jpg';
+import photoCEO from '../../assets/images/avatars/avatar_CEO_V.Parrot-sm.jpg';
+import photoSecr1 from '../../assets/images/avatars/avatar_femme_secretaire1-sm.jpg';
+import photoSecr2 from '../../assets/images/avatars/avatar_femme_secretaire2-sm.jpg';
+import photoChefAtelier from '../../assets/images/avatars/avatar_chef-atelier-sm.jpg';
+import photoTolier from '../../assets/images/avatars/portrait-John-Doe-sm.jpg';
+import photoMeca from '../../assets/images/avatars/portrait-Michel-sm.jpg';
 
 export const listEmployed = [
   {

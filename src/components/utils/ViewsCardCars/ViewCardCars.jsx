@@ -4,7 +4,6 @@ import '../../../index.css';
 import './ViewCardCars.css';
 
 function ViewCardCars(props) {
-  console.log(props.listArray, props.NumbreOfCars);
   const Array = props.listArray.slice(0, props.NumbreOfCars);
 
   return (
@@ -15,6 +14,11 @@ function ViewCardCars(props) {
             <Card className="Card-hover" style={{ width: '20rem' }}>
               <Card.Img
                 variant="top"
+                style={{
+                  width: '100%',
+                  height: '13rem',
+                  justifyContent: 'center',
+                }}
                 src={myCard.imagesCar[0].src}
                 alt={myCard.imagesCar[0].alt}
               />

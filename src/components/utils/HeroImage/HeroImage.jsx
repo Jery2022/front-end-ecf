@@ -28,12 +28,10 @@ export default function HeroImage() {
           réparer et les rénover, peu importe leur durée de vie et leur modèle.
         </p>
         <button
+          type="button"
           className="My-Button"
           onClick={handleGoHome}
           style={{
-            type: 'button ',
-            marginLeft: 'auto',
-            marginRight: 'auto',
             justifyContent: 'center',
           }}
         >
