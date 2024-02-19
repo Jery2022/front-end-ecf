@@ -35,7 +35,7 @@ export default function Home() {
   };
   return (
     <>
-      <article className="container-fluid">
+      <article className="container-fluid p-0 my-0">
         <HeroImage />
         <section className="section-paire">
           <Row className="slogan">

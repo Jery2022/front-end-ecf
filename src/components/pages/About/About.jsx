@@ -19,7 +19,7 @@ export default function About() {
 
   return (
     <>
-      <article className="container-fluid">
+      <article className="container-fluid p-0 my-0">
         <BaseCarousels />
         <section className="section-paire">
           <div className="section-title">A Propos</div>

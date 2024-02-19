@@ -51,6 +51,7 @@ export default function Login() {
 
     setPassword('');
     setEmail('');
+    Alert('Bienvenue ' + pseudo + ' à votre espace personnel');
   };
 
   return (

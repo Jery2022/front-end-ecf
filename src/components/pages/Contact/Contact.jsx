@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Image } from 'react-bootstrap';
 import './Contact.css';
 import { useNavigate } from 'react-router-dom';
+import Logo from '../../../assets/images/logo/V-Parrot-logo.png';
 
 export default function Contact() {
   const [inputs, setInputs] = useState({});
@@ -26,6 +27,7 @@ export default function Contact() {
         <section className="section-paire">
           <Form className="wrapper-login">
             <h2>Contact</h2>
+            <Image className="wrapper-logo" src={Logo} alt="image" />
             <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
               <Form.Label>Email :</Form.Label>
               <Form.Control

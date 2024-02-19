@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+//import BaseCarousel from '../../utils/Carousels/BaseCarousels';
 import HeroImage from '../../utils/HeroImage/HeroImage';
 
 export default function Landing() {
@@ -10,12 +12,6 @@ export default function Landing() {
       align-items: center;
       width: 100%;
       height: 100vh;
-      /*.My-Button {
-        width: 220px;
-        height: 50px;
-         margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;*/
       }
     }
   `;
@@ -24,7 +20,7 @@ export default function Landing() {
       <article>
         <section>
           <LandingDiv>
-            <div className="Landing">
+            <div>
               <HeroImage />
             </div>
           </LandingDiv>

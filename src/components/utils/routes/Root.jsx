@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../../index.css';
@@ -9,20 +9,20 @@ import Gallery from '../../pages/Gallery/Gallery';
 import Contact from '../../pages/Contact/Contact';
 import ErrorPage from '../../pages/ErrorPage/ErrorPage';
 import Login from '../../pages/Login/Login';
+//import Landing from '../../pages/Landing/Landing';
+import HeroImage from '../HeroImage/HeroImage';
 
 function Root() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Outlet />} errorElement={<ErrorPage />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-        </Route>
-
+        <Route path="/" element={<HeroImage />} errorElement={<ErrorPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/*" />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </>
   );
