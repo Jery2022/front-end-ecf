@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Site vitrine d'un garage au nom 'garage v. Parrot' créé avec Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_1_ Comment accéder en local à mon code de développement
 
-## Available Scripts
+1- Clonez le référentiel du projet avec git clone :
+https://github.com/Jery2022/front-end-ecf.git
 
-In the project directory, you can run:
+2- Installez les dépendances en exécutant « npm » dans le dossier du projet
+Il s’agit de pour l’essentiel :
+• fontawesome  
+• react-refresh-webpack-plugin
+• reduxjs/toolkit
+• axios
+• bootstrap
+• express
+• node
+• react-bootstrap
+• styled-components
+
+_2_ Comment accéder en ligne à mon code en production
+Il faut cliquer sur le lien :
+https://garage-v-parrot241-af80c74a3487.herokuapp.com/
+
+## Scripts disponibles
+
+dans le dossier projet, lancer la commande pour faire tourne l'application en local après avec installer toutes les dépendances indiquées plus haut :
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+lance l'application en mode development \
+ouvrir avec le lien : [http://localhost:3000](http://localhost:3000) afin de voir le site à partir d'un navigateur.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Près requis techniques
 
-### `npm test`
+Serveur :
+● Heroku.com
+● Version PHP 8.2
+● Extension PHP : PDO
+● MariaDB (version 10.10.2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Les langages et/ou frameworks cités ci-dessous ont été employés pour le développement du site.
 
-### `npm run build`
+Pour le front :
+● HTML 5
+● CSS 3
+● Bootstrap
+● JavaScript  
+● React JS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pour le back :
+● PHP 8.2 sous PDO
+● Symfony 7.0
+● MySQL 8.0.31
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Sites inspirations :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- https://wgarage.fr/
+- https://vlsauto.fr/
 
-### `npm run eject`
+## Apprendre plus sur React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Vous pouvez en apprendre plus en consultant la document sur Create React App documentation à travers le lien : https://facebook.github.io/create-react-app/docs/getting-started.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ou
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Apprendre React à partir de la documentation officielle : https://reactjs.org/.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Informations utiles sur la BDD
 
-## Learn More
+TO DO :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- création de la BDD sur Alwaysdata
+- création des tables à partir des scripts SQL
+- migrations des données contenues dans les fichiers de données.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Le site est déployé sur la plateforme Heroku. En cas de difficulté de déployement lire la documentation officielle de Heroku et voir le lien :
 
-### `npm run build` fails to minify
+https://create-react-app.dev/docs/deployment/
+ou
+https://medium.com/captainme-ai/deploying-migrating-static-create-react-app-project-to-heroku-22-stack-b19a4255ea7c
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy You !
