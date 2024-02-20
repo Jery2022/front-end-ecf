@@ -25,4 +25,6 @@ yarn-error.log*
 
 # Dossier de dev
 /ToDestroy
+.dockerignore
+Dockerfile
 
